@@ -2056,7 +2056,9 @@ function endTurn(player)
 {
 	theSessionScoreIDs[player].style.backgroundColor="white";
 	theSessionScoreIDs[player].style.color="black";
-	flashColor(player,"endTurn",'2s');
+	theNamesIDs[player].style.backgroundColor="green";
+	theNamesIDs[player].style.color="white";
+	//flashColor(player,"endTurn",'2s');
 	theNamesIDs[player].style.backgroundColor="white";
 	theNamesIDs[player].style.color="black";
 	if(player==theLayers.length-1)
@@ -2067,7 +2069,7 @@ function endTurn(player)
 	{
 		player++
 	}
-	flashColor(player,"startTurn",'2s');
+	//flashColor(player,"startTurn",'2s');
 	setTimeout(startTurn,1000,player)
 }
 
