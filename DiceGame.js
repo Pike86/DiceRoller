@@ -95,6 +95,12 @@ var playerRiskToleranceIDs=
 	document.getElementById("playerTwoRiskTolerance")
 ]
 
+var buttons=
+[
+	document.getElementById("rollDiceButton"),
+	document.getElementById("bankButton")
+]
+
 //===============
 //IMAGE VARIABLES
 //===============
@@ -1985,6 +1991,9 @@ function startTurn(player)
 {
 	if(player==0)
 	{
+		//Display the Buttons
+		buttons[0].style.display = 'inline'
+		buttons[1].style.display = 'inline'
 		//Illuminate the Player's Square
 		theNamesIDs[player].style.backgroundColor="green"
 		theNamesIDs[player].style.color="white"
@@ -2068,9 +2077,11 @@ function endTurn(player)
 	else
 	{
 		player++
+		buttons[0].style.display = 'none'
+		buttons[1].style.display = 'none'
 	}
 	//flashColor(player,"startTurn",'2s');
-	setTimeout(startTurn,1000,player)
+	setTimeout(startTurn,1500,player)
 }
 
 function incrementNumber(x,y,z,type,player)
@@ -2094,6 +2105,11 @@ function incrementNumber(x,y,z,type,player)
 			else
 			{
 				clearInterval(incrementInterval);
+				if(player==0)
+				{
+					buttons[0].style.display = 'inline'
+					buttons[1].style.display = 'inline'
+				}
 			}
 		}, 50);
 	}
@@ -2174,6 +2190,8 @@ function rollDice(player)
 	//Player Rolls
 	if(player==0)
 	{
+			buttons[0].style.display = 'none'
+			buttons[1].style.display = 'none'
 			roll=getRandomInt(1,7);
 			if(roll<=1)
 			{
@@ -2228,6 +2246,11 @@ function bankScore(player)
 {
 	setTimeout(incrementNumber,1500,sessionScore,0,0,"bankScore",player);
 	sessionScore=0;
+	if(player==0)
+	{
+		buttons[0].style.display = 'none'
+		buttons[1].style.display = 'none'
+	}
 	setTimeout(endTurn,3000,player);
 }
 
