@@ -2239,7 +2239,7 @@ function rollDice(player)
 	}
 }
 
-//-------------------
+//--------------------
 //Bank Player's Score
 //-------------------
 function bankScore(player)
