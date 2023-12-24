@@ -24,24 +24,22 @@ button{
 	height:100%;
 }
 
-.rowHeaders td{
-	text-align:center;
-	min-width:10vw;
-	border: solid black;
-	background-color:white;
+.table{
+	border-collapse:collapse;
 }
 
 .tableElements td{
 	text-align:center;
 	min-width:30vw;
-	min-height:10vh;
-	border: solid black;
+	padding:0.35em 0.05em;
+	border: solid black 2.5px;
 	background-color:white;
 }
 
 .diceImage{
-	width:10vw;
-	height:10vh;
+	width:12.5vw;
+	height:8.5vh;
+	margin-top:1vh;
 	border:solid black;
 	box-shadow:0.1em 0.1em grey;
 }

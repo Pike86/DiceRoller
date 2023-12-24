@@ -1991,13 +1991,14 @@ function startTurn(player)
 {
 	if(player==0)
 	{
-		//Display the Buttons
+		//Display the Player's Buttons
 		buttons[0].style.display = 'inline'
 		buttons[1].style.display = 'inline'
-		//Illuminate the Player's Square
+
+		//Illuminate the Player's Name
 		theNamesIDs[player].style.backgroundColor="green"
 		theNamesIDs[player].style.color="white"
-		//Display the Player's Button
+
 		//Wait for the Player to Roll or Bank
 	}
 	//=====
@@ -2011,7 +2012,7 @@ function startTurn(player)
 		theNamesIDs[player].style.color="white";
 		roll = rollDice(player)
 
-		//If it doesn't a 1, do this
+		//If AI Has Not Rolled a 1, execute the following code
 		if(roll>1)
 		{
 			//If the roll exceeds the AI's risk tolerance, then do this:
