@@ -1,0 +1,32 @@
+/*===================*/
+/*THE IMAGE CONTAINER*/
+/*===================*/
+.imageContainer{
+	position:relative;
+	display:flex;
+	width:16vw;
+	height:40vh;
+	padding: 10px solid white;
+}
+
+.imageContainer img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+@keyframes pulse{
+	0%, 100%
+	{
+		transform: translateY(0);
+		outline:none;
+	}
+
+	50%
+	{
+		transform: translateY(15px);
+		outline:none;
+	}
+}

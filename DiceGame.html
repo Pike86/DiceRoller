@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="DiceGame.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<body>
+<table>
+  <tr>
+    <!---Blank Column--->
+    <td>
+    </td>
+    <td>
+      <div class="imageContainer">
+        <!--BOTTOM-->
+        <img id="theImageLayer1">
+        <img id="theImageLayer2">
+        <img id="theImageLayer3">
+        <img id="theImageLayer4">
+        <img id="theImageLayer5">
+        <img id="theImageLayer6">
+        <img id="theImageLayer7">
+        <img id="theImageLayer8">
+        <!--TOP-->
+      </div>
+    </td>
+    <td>
+      <div class="imageContainer">
+        <!--BOTTOM-->
+        <img id="theImageLayer1A">
+        <img id="theImageLayer2A">
+        <img id="theImageLayer3A">
+        <img id="theImageLayer4A">
+        <img id="theImageLayer5A">
+        <img id="theImageLayer6A">
+        <img id="theImageLayer7A">
+        <img id="theImageLayer8A">
+        <!--TOP-->
+    </td>
+  </tr>
+  <!----------->
+  <!---Names--->
+  <!----------->
+  <tr class="tableElements">
+    <td>Name</td>
+    <td id="playerOneName">
+    </td>
+    <td id="playerTwoName">
+    </td>
+  </tr>
+  <!----------->
+  <!---Controller--->
+  <!----------->
+  <tr class="tableElements">
+    <td>Controller</td>
+    <td>You</td>
+    <td>AI</td>
+  </tr>
+  <!-------------------->
+  <!---Risk Tolerance--->
+  <!-------------------->
+  <tr class="tableElements">
+    <td>Risk Tolerance</td>
+    <td id="playerOneRiskTolerance">
+    </td>
+    <td id="playerTwoRiskTolerance">
+    </td>
+  </tr>
+  <!------------------->
+  <!---Overall Score--->
+  <!------------------->
+  <tr class="tableElements">
+    <td>Overall Score</td>
+    <td id="playerOneOverallScore">0
+    </td>
+    <td id="playerTwoOverallScore">0
+    </td>
+  </tr>
+  <!------------------->
+  <!---Session Score--->
+  <!------------------->
+  <tr class="tableElements">
+    <td>Session Score</td>
+    <td id="playerOneSessionScore">
+    </td>
+    <td id="playerTwoSessionScore">
+    </td>
+  </tr>
+  <!----------------->
+  <!---Roll Button--->
+  <!----------------->
+  <tr class="tableElements">
+    <td>Button</td>
+    <td>
+      <button onclick="rollDice(0)">Roll</button>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <!----------------->
+  <!---Bank Button--->
+  <!----------------->
+  <tr class="tableElements">
+    <td>Button</td>
+    <td>
+      <button onclick="bankScore(0)">Bank</button>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <!---------->
+  <!---Dice--->
+  <!---------->
+  <tr class="tableElements">
+    <td>Dice</td>
+    <td><img class="diceImage" id="playerOneDice">
+    </td>
+    <td><img class="diceImage" id="playerTwoDice">
+    </td>
+  </tr>
+
+</table>
+<script src="DiceGame.js"></script>
+</body>
+</html>
