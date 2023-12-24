@@ -9,8 +9,12 @@
 	padding: 5px 5px solid white;
 }
 
-.button{
-	background-color:"green";
+body{
+	background-color:lightgrey;
+}
+
+button{
+
 }
 
 .imageContainer img{
@@ -24,6 +28,7 @@
 	text-align:center;
 	min-width:10vw;
 	border: solid black;
+	background-color:white;
 }
 
 .tableElements td{
@@ -31,6 +36,7 @@
 	min-width:30vw;
 	min-height:10vh;
 	border: solid black;
+	background-color:white;
 }
 
 .diceImage{
